@@ -1,0 +1,60 @@
+.header-section{
+    width:100%;
+    height: 80vh;
+    background-color: black;
+}
+
+.header-font{
+    font-size: 80px;
+    color:red;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    margin-left: 25%;
+    font-family: 'Lobster', cursive;
+    margin-top: 5%;
+   
+}
+.btn-select{
+    width: 90%;
+    margin-left: 5%;
+    height:30%;
+    background-color: rgb(59, 59, 232);
+}
+.btn-select:hover{
+    background-color: lightgrey;
+    color: white;
+
+}
+.card-image img{
+    height: 60%;
+    width: 100%;
+}
+
+.half-width{
+    width:75%;
+
+}
+.half-widt{
+    width: 25%;
+
+
+}
+.side-calculation{
+    width:100%;
+    height:40%;
+    background-color: black;
+    color: aliceblue;
+
+
+}
+.budget-calculation{
+    width:100%;
+    height:40%;
+    background-color: black;
+    color: aliceblue;
+}
+.calculate-button{
+    width:90%;
+    background-color: rgb(59, 59, 232);
+    margin-left: 5%;
+}
