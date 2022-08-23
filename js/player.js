@@ -11,12 +11,11 @@ for(let i=0; i<playerNumber.length; i++){
 
     const tr=document.createElement('tr');
 
-    tr.innerHTML= ` <th>${i+1}</th>
+    tr.innerHTML= `
+    <th>${i+1}.</th>
     <td>${playerName}</td>`;
    
     tableField.appendChild(tr);
-   
-    
     
 }
 }
