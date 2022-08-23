@@ -1,8 +1,10 @@
-const playerArray=[];
+let playerArray=[];
 
 function display(playerNumber){
 const tableField=document.getElementById('player-name-field');
 tableField.innerHTML='';
+
+
 for(let i=0; i<playerNumber.length; i++){
 
 
@@ -15,9 +17,10 @@ for(let i=0; i<playerNumber.length; i++){
     <th>${i+1}.</th>
     <td>${playerName}</td>`;
    
-    tableField.appendChild(tr);
-    
+    tableField.appendChild(tr);   
 }
+
+
 }
 
 function addToPlayer(element){
@@ -26,11 +29,19 @@ function addToPlayer(element){
     const playerObj={
         playerName:playerName
     }
+
+    if(playerArray.length>=5){
+        alert('please do not select over five player');
+        return;
+    }
+
     playerArray.push(playerObj);
 
-  
 
     document.getElementById('added-player').innerText=playerArray.length;
-
+ 
     display(playerArray);
 }
+
+
+           

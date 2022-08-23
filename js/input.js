@@ -7,6 +7,12 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 
     perPlayerInputField.value='';
 
+     if(isNaN(perPlayerInputAmount)){
+          alert('please input valid number')
+          return;
+     }
+
+
     const updateValue=document.getElementById('added-player').innerText=playerArray.length;
     const updateValueAmount=parseFloat(updateValue);
 
@@ -40,6 +46,11 @@ document.getElementById('btn-calculate-total-balance').addEventListener('click',
     perManagerInputField.value='';
     
 
+    if(isNaN(perManagerInputAmount)){
+     alert('please input valid number')
+     return;
+}
+
     const perCoachInputField=document.getElementById('per-coach');
     const perCoachInputAmountstring=perCoachInputField.value;
     const perCoachInputAmount=parseFloat(perCoachInputAmountstring);
@@ -48,12 +59,17 @@ document.getElementById('btn-calculate-total-balance').addEventListener('click',
 
 
 
+    if(isNaN(perCoachInputAmount)){
+     alert('please input valid number')
+     return;
+}
 
                 // total expense balance 
 
      const balanceTotalPlayerExpenseElement=document.getElementById('player-expense');
      const previousBalanceTotalExpenseString=balanceTotalPlayerExpenseElement.innerText;
      const previousBalanceTotalExpense=parseFloat(previousBalanceTotalExpenseString);
+
 
      const newBalanceExpenseTotal=perManagerInputAmount + perCoachInputAmount + previousBalanceTotalExpense + newBalanceTotal;
 
