@@ -8,7 +8,7 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
     perPlayerInputField.value='';
 
      if(isNaN(perPlayerInputAmount)){
-          alert('please input valid number')
+          alert('you enter wrong number.please input valid number')
           return;
      }
 
@@ -47,7 +47,7 @@ document.getElementById('btn-calculate-total-balance').addEventListener('click',
     
 
     if(isNaN(perManagerInputAmount)){
-     alert('please input valid number')
+     alert('you enter wrong number .please input valid number')
      return;
 }
 
@@ -60,7 +60,7 @@ document.getElementById('btn-calculate-total-balance').addEventListener('click',
 
 
     if(isNaN(perCoachInputAmount)){
-     alert('please input valid number')
+     alert('you enter wrong number.please input valid number')
      return;
 }
 
@@ -74,7 +74,7 @@ document.getElementById('btn-calculate-total-balance').addEventListener('click',
      const newBalanceExpenseTotal=perManagerInputAmount + perCoachInputAmount + previousBalanceTotalExpense + newBalanceTotal;
 
      balanceTotalPlayerExpenseElement.innerText=newBalanceExpenseTotal;
-// console.log(newTotalExpenseAmount)
+
     
 })
 })
